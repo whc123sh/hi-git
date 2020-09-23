@@ -8,15 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @author: Andy
  * @time: 2020/9/23 11:01
  */
-@RequestMapping("user")
+@RequestMapping("/")
 @RestController
 public class UserController {
-    @RequestMapping("login")
+    @RequestMapping("/")
     public String login() {
-        User u = new User();
-        u.setGco("2");
-        u.setGna("sss");
-        return u.toString();
+
+        return "欢迎蔡老板";
     }
 
 }
