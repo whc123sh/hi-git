@@ -6,6 +6,10 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface UserDao {
 
-    @Select("select * from user where id=1")
+    /**
+     * 查找
+     * @return
+     */
+    @Select("select id,name as username from user where id=1")
     User selectUserById();
 }
